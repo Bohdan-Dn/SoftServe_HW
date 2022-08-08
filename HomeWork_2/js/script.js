@@ -1,5 +1,5 @@
 //Task 1
-
+/*
 let roomLenght;
 let roomHeight;
 let roomWidth;
@@ -20,23 +20,22 @@ let wallArea = roomHeight * (2 * (roomLenght + roomWidth));
 
 let numberCans = Math.ceil(wallArea / 16);
 alert(`You need ${numberCans} can(s) of the paint`);
-
+*/
 
 
 
 
 //Task 2
-/*
+
 let userCelsius = Number(prompt('Enter the temperature in Celsius!'));
-let resultKelvin;
-resultKelvin = userCelsius + 273.15;
+let resultKelvin = userCelsius + 273.15;
 
 if (userCelsius = !Number(userCelsius)) {
     alert('ERROR');
 } else {
     alert(resultKelvin + ' °F');
 };
-*/
+
 
 
 
