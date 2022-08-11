@@ -1,6 +1,6 @@
 //Task 1
 // Drawing in console
-/*
+
 const userWight = checkNumber();
 const userSymbol = prompt('Enter symbol!', '');
 
@@ -21,11 +21,11 @@ function showInConsole() {
 };
 
 showInConsole();
-*/
+
 
 //Task 2
 // DNA
-
+/*
 const userDna = prompt('Enter DNA!');
 const arrDna = Array.from(userDna);
 
@@ -49,7 +49,7 @@ function showComplementarySideDna() {
     return alert(arrDna.join(""));
 };
 showComplementarySideDna();
-
+*/
 
 //Task 3
 // Golden sand
