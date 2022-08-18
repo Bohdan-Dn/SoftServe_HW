@@ -1,0 +1,50 @@
+.main {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: rem(60);
+        font-size: rem(56);
+        font-weight: 700;
+        color: yellow
+    }
+
+    &__homeworks {
+        display: flex;
+        flex-direction: column;
+        gap: rem(40);
+    }
+}
+
+.homework {
+    text-align: center;
+    padding-bottom: rem(40);
+
+    &__title {
+        margin-bottom: rem(30);
+        font-size: rem(34);
+        font-weight: 700;
+        text-decoration: underline;
+        color: rgba(0, 86, 184, )
+    }
+
+    &__form {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+}
+
+.first-form,
+.second-form,
+.third-form,
+.fourth-form {
+    flex-direction: column;
+}

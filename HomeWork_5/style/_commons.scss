@@ -1,0 +1,43 @@
+.button {
+    display: inline;
+    outline: none;
+    margin-top: rem(20);
+    margin-bottom: rem(20);
+    padding-top: rem(10);
+    padding-right: rem(20);
+    padding-bottom: rem(10);
+    padding-left: rem(20);
+    border-radius: rem(5);
+    background-color: rgba(255, 217, 0, );
+    transition: background-color linear 0.2s;
+
+    &:hover {
+        background-color: rgba(255, 217, 0, 0.699)
+    }
+}
+
+.input {
+    background-color: rgb(253, 253, 253);
+    padding: rem(15) rem(10);
+    outline: none;
+    min-width: rem(500);
+    border: 1px solid #000000;
+    border-radius: rem(4);
+
+    &:focus {
+        background-color: #ffffffd5;
+    }
+}
+
+.result {
+    margin-top: rem(10);
+    font-size: rem(24);
+    font-weight: 700;
+}
+
+.text {
+    margin-top: rem(10);
+    font-size: rem(24);
+    font-weight: 700;
+    color: red;
+}
