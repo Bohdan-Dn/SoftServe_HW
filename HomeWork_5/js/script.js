@@ -26,11 +26,9 @@ focusButton.addEventListener('click', () => {
 
 //Task 2
 // Statistics
-//const statText = document.getElementById('wolfText');
+const statText = document.getElementById('statText').textContent;
 const statButton = document.getElementById('statButton');
 const statResult = document.getElementById('statResult');
-
-const statText = 'How to get value from input? 1, 2, 3, 4, 5:))';
 
 const letterRE = /[a-zA-Z]/g;
 const numberRE = /[0-9]/g;
@@ -51,11 +49,10 @@ statButton.addEventListener('click', () => {
 
 // Task 3
 // Werewolf letter
-//const wolfText = document.getElementById('wolfText');
+const wolfText = document.getElementById('wolfText').textContent;
 const wolfButton = document.getElementById('wolfButton');
 const wolfResult = document.getElementById('wolfResult');
 
-const wolfText = 'iNDEPENDENCE DAY OF uKRAINE 08.24!';
 let changeNumToUnderLine = wolfText.replace(numberRE, '_');
 
 let changeUperToLower = (str) => str
