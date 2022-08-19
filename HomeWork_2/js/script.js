@@ -30,7 +30,7 @@ alert(`You need ${numberCans} can(s) of the paint`);
 let userCelsius = Number(prompt('Enter the temperature in Celsius!'));
 let resultKelvin = userCelsius + 273.15;
 
-if (userCelsius = !Number(userCelsius)) {
+if (userCelsius == !Number(userCelsius)) {
     alert('ERROR');
 } else {
     alert(resultKelvin + ' °F');

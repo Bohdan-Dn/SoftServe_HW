@@ -1,6 +1,6 @@
 //Tast 1
 //Your order
-
+/*
 const inputSentence = prompt('Enter your string');
 const sortByNumber = (string) => {
     const findNumber = (s) => s.split('').reduce((pos, value) => Number(value) ? Number(value) : pos, 0);
@@ -9,7 +9,7 @@ const sortByNumber = (string) => {
     return arrWords.join(' ');
 };
 console.log(sortByNumber(inputSentence));
-
+*/
 
 //Task 2
 //Check methods
@@ -68,3 +68,12 @@ function calc(num1, num2, operator) {
 }
 calc('9', '3', '/');
 */
+
+//Task 3
+//Tic-Tac-Toe
+
+const board = [
+    [1, 1, 1],
+    [1, 2, 2],
+    [2, 2, 2],
+]

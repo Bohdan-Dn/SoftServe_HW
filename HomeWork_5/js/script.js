@@ -13,12 +13,14 @@ const arrCards = [
     '♠ace♠', '♥ace♥', '♣ace♣', '♦ace♦', 'joker', 'joker',
 ];
 
+
+
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 };
 
 focusButton.addEventListener('click', () => {
-    let index = getRandomNumber(0, arrCards.length - 1);
+    let index = getRandomNumber(0, arrCards.length);
     focusResult.innerText = arrCards[index];
 });
 //========================================================================================
