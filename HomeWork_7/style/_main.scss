@@ -1,0 +1,227 @@
+.main {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-right: rem(100);
+        padding-left: rem(100);
+    }
+
+    &__title {
+        margin-bottom: rem(50);
+        font-size: rem(42);
+        font-weight: 700;
+        color: rgb(0, 0, 0)
+    }
+
+    &__homeworks {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(50);
+        justify-content: center;
+    }
+}
+
+.homework {
+    flex: 1 1 45%;
+    padding: rem(10);
+    box-shadow: 5px 5px 15px 0px rgba(150, 150, 150, 0.28);
+}
+
+.tile-homework {
+    flex: 0 1 100%;
+}
+
+// Transform
+.transform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(20);
+    }
+
+    &__subtitle {
+        font-size: rem(20);
+    }
+
+    &__input {
+        max-width: rem(60);
+        padding: rem(8) rem(5);
+    }
+}
+
+
+// Clicker
+.clicker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: rem(50);
+    }
+
+    &__button-plus,
+    &__button-minus {
+        min-width: rem(90);
+    }
+}
+
+
+// Tile
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__body {
+        width: rem(604);
+        height: rem(604);
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+    }
+
+
+    &__square {
+        width: rem(60);
+        height: rem(60);
+    }
+
+    &__end {
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        font-size: rem(24);
+        color: blue;
+    }
+}
+
+
+// Modal
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+// Clock
+.clock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: rem(20);
+
+    &__body {
+        padding: rem(10) rem(5);
+        background-color: #f7f6e8;
+        border-radius: rem(5);
+    }
+
+    &__suptitle {
+        font-size: rem(10);
+    }
+
+    &__time {
+        padding-right: rem(10);
+        padding-left: rem(10);
+        font-size: rem(114);
+        font-weight: 700;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: end;
+        gap: rem(3);
+        font-size: rem(10);
+
+    }
+}
+
+
+
+
+
+
+// Popup
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .6s ease 0s;
+
+    &__body {
+        padding: rem(30) rem(30);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: rem(20);
+        padding: rem(30) rem(40);
+        background-color: #95dcee;
+        border-radius: rem(10);
+
+        opacity: 0;
+        transition: all .6s ease 0s;
+        transform: translate(0px, -100%);
+    }
+
+    &__text {
+        font-size: rem(24);
+    }
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
