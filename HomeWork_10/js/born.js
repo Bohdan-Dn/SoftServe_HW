@@ -7,8 +7,8 @@ const REG_PASSPORT = /[a-zA-z\d]/;
 const REG_NUM = /\d/;
 
 
-submit.onclick = function (e) {
-    e.preventDefault();
+submit.onclick = function () {
+
     if (!REG_PASSPORT.test(passportUser.value) || passportUser.value.length != 8) {
         passportUser.nextElementSibling.innerHTML = 'Error';
     } else {
