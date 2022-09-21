@@ -1,0 +1,48 @@
+.main {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-right: rem(100);
+        padding-left: rem(100);
+    }
+
+    &__title {
+        margin-bottom: rem(50);
+        font-size: rem(42);
+        font-weight: 700;
+        color: rgba(0, 86, 184, )
+    }
+
+    &__homeworks {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(50);
+        justify-content: center;
+    }
+}
+
+.homework {
+    flex: 1 1 45%;
+    text-align: center;
+    gap: rem(30);
+    padding: rem(10);
+    box-shadow: 5px 5px 15px 0px rgba(150, 150, 150, 0.28);
+
+    &__title {
+        margin-bottom: rem(40);
+        font-size: rem(24);
+        font-weight: 700;
+    }
+
+    &__result {
+        display: block;
+        margin-bottom: rem(20);
+        color: red;
+    }
+}
